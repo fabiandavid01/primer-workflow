@@ -20,8 +20,3 @@ jobs:
     - name: Correr pruebas
       id: correr-pruebas
       run: python -m unittest -v tests/persona_test_case.py
-    - name: Calculo de cubrimiento
-      id: cubrimiento
-      run: |
-          coverage run -m unittest tests/persona_test_case.py
-          coverage report -m
